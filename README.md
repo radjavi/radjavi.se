@@ -10,5 +10,6 @@ My personal website which I created just for fun.
 * [vh-check](https://github.com/Hiswe/vh-check)
 
 ### Fonts
+* [Poppins](https://fonts.google.com/specimen/Poppins)
 * [Fira Sans](https://fonts.google.com/specimen/Fira+Sans)
 * [Font Awesome](https://fontawesome.com/)
