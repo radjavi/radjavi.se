@@ -1,4 +1,4 @@
-# ![Logo](favicon-32x32.png) radjavi.se
+# <img src="favicon.ico" height=24> radjavi.se
 My personal website which I created just for fun.
 
 ### Technologies
