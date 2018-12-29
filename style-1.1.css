@@ -3,8 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   letter-spacing: 0.5px;
-  -webkit-transition: margin 0.5s; /* For Safari 3.1 to 6.0 */
-  transition: margin 0.5s;
 }
 
 :focus {
@@ -41,8 +39,8 @@ h2 {
   width: 100%;
   height: 340px;
   margin-top: -50px;
-  -webkit-transition: width 0.5s, height 0.5s, margin 0.5s, font-size 0.5s; /* For Safari 3.1 to 6.0 */
-  transition: width 0.5s, height 0.5s, margin 0.5s, font-size 0.5s;
+  -webkit-transition: width 0.5s, height 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s, height 0.5s;
 }
 
 header {
@@ -74,6 +72,8 @@ header {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 800;
   float: left;
+  -webkit-transition: font-size 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: font-size 0.5s;
 }
 
 .colorAccent {
@@ -289,6 +289,14 @@ header {
   color: #7241ff;
 }
 
+#eatabeat-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .card {
   height: 360px;
   background-color: #fff;
@@ -360,7 +368,6 @@ header {
   border-color: #7241ff;
   border-style: solid;
   border-width: 1px;
-  margin-right: 10px;
   -webkit-transition: ease-in-out 0.2s; /* Safari */
   transition: ease-in-out 0.2s;
 }
@@ -380,7 +387,6 @@ header {
   border-color: #7241ff;
   border-style: solid;
   border-width: 1px;
-  margin-right: 15px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -538,4 +544,10 @@ footer {
   }
   #img-eatabeat { width: 35%; height: auto; }
   #img-cetac { width: 50%; height: auto; }
+}
+
+@media only screen and (max-width: 300px) {
+  #eatabeat-buttons {
+    flex-direction: column;
+  }
 }
