@@ -5,10 +5,11 @@ My personal website which I created just for fun.
 * JQuery
 * [Animate.css](https://github.com/daneden/animate.css)
 * [AOS](https://github.com/michalsnik/aos)
-* [Particles](https://vincentgarreau.com/particles.js/)
+* [particles.js](https://vincentgarreau.com/particles.js/)
 * [Modernizr](https://modernizr.com/)
 * [vh-check](https://github.com/Hiswe/vh-check)
 
 ### Fonts
+* [Poppins](https://fonts.google.com/specimen/Poppins)
 * [Fira Sans](https://fonts.google.com/specimen/Fira+Sans)
 * [Font Awesome](https://fontawesome.com/)
