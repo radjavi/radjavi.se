@@ -8,22 +8,19 @@ body {
   background-color: #311d3f;
   color: #fff;
   font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.2px;
 }
 
 .smallBody {
   width: 80%;
   max-width: 1100px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 25px;
   -webkit-transition: width 0.5s; /* For Safari 3.1 to 6.0 */
   transition: width 0.5s;
 }
 
-.App {
-
-}
-
-.App-header {
+.header {
   /*background-color: #2A1837;*/
   width: 100%;
   height: 75px;
@@ -44,7 +41,7 @@ ul {
 }
 
 li {
-  float: right;
+  float: left;
   margin-left: 40px;
 }
 
@@ -58,14 +55,61 @@ li {
 
 .header-link:hover {
   color: #e23e57;
-  border-style: solid;
-  border-color: #e23e57;
-  border-width: 0 0 2px 0;
 }
 
 .header-link.active {
   color: #e23e57;
-  border-style: solid;
-  border-color: #e23e57;
-  border-width: 0 0 2px 0;
+}
+
+.header-menu {
+  position: relative;
+}
+
+#menu-line {
+  background-color: #e23e57;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  transition: all 600ms ease;
+}
+
+#intro {
+  line-height: 45px;
+  -webkit-transition: width 0.5s, height 0.5s, margin 0.5s, font-size 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s, height 0.5s, margin 0.5s, font-size 0.5s;
+  max-width: 700px;
+}
+
+#welcome {
+  margin-top: 170px;
+}
+
+#hi {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin-bottom: 45px;
+}
+
+#myNameIs {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  animation-delay: 0.1s;
+}
+
+#studying {
+  color: #E23E57;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  max-width: 800px;
+  margin-top: 25px;
+  line-height: 1.8em;
+  animation-delay: 0.2s;
+  -webkit-transition: width 0.5s, height 0.5s, margin 0.5s, font-size 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s, height 0.5s, margin 0.5s, font-size 0.5s;
 }
