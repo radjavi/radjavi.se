@@ -1,18 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Home from './Home';
-import Projects from './Projects';
+import Home from './components/Home';
+import Projects from './components/Projects';
 import * as serviceWorker from './serviceWorker';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import { Route, Link, BrowserRouter } from 'react-router-dom'
+import Header from './components/Header'
 
 const routing = (
-  <Router>
-    <div>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/projects" component={Projects} />
-    </div>
-  </Router>
+  <BrowserRouter>
+    <Route
+      render={ ({location}) => (
+        <div>
+          <Header active={location.pathname == "/" ? "home" : "projects"} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/projects" component={Projects} />
+        </div>
+      )}
+    />
+  </BrowserRouter>
 )
 
 ReactDOM.render(routing, document.getElementById('root'));

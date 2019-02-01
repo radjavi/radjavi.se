@@ -4,11 +4,15 @@
   box-sizing: border-box;
 }
 
+:focus {
+  outline: none !important;
+}
+
 body {
-  background-color: #311d3f;
+  background-color: #1A1A1F;
   color: #fff;
   font-family: 'Poppins', sans-serif;
-  letter-spacing: 0.2px;
+  letter-spacing: 1px;
 }
 
 .smallBody {
@@ -31,7 +35,7 @@ body {
 }
 
 #header-logo {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.3px;
 }
@@ -42,23 +46,25 @@ ul {
 
 li {
   float: left;
-  margin-left: 40px;
+  margin-left: 50px;
 }
 
 .header-link {
   text-decoration: none;
-  color: #fff;
-  font-weight: 400;
+  letter-spacing: 3px;
+  font-size: 14px;
+  color: #454757;
+  font-weight: 500;
   padding-bottom: 3px;
-  transition: color 0.25s;
+  transition: color 300ms;
 }
 
 .header-link:hover {
-  color: #e23e57;
+  color: #fff;
 }
 
 .header-link.active {
-  color: #e23e57;
+  color: #fff;
 }
 
 .header-menu {
@@ -66,49 +72,51 @@ li {
 }
 
 #menu-line {
-  background-color: #e23e57;
+  background-color: #E16565;
   position: absolute;
   top: 25px;
-  left: 0;
-  width: 20px;
+  width: 0;
   height: 2px;
-  transition: all 600ms ease;
+  transition: all 300ms;
 }
 
 #intro {
-  line-height: 45px;
+  line-height: 50px;
   -webkit-transition: width 0.5s, height 0.5s, margin 0.5s, font-size 0.5s; /* For Safari 3.1 to 6.0 */
   transition: width 0.5s, height 0.5s, margin 0.5s, font-size 0.5s;
-  max-width: 700px;
 }
 
 #welcome {
   margin-top: 170px;
+  text-align: center;
 }
 
 #hi {
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  margin-bottom: 45px;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 50px;
+  margin-bottom: 15px;
 }
 
-#myNameIs {
-  font-family: 'Poppins', sans-serif;
-  font-size: 30px;
+#CSE {
+  color: #E16565;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
   font-weight: 600;
   animation-delay: 0.1s;
 }
 
 #studying {
-  color: #E23E57;
-  font-family: 'Fira Sans', sans-serif;
+  color: #F8D37B;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  font-weight: 600;
   letter-spacing: 0.5px;
-  max-width: 800px;
   margin-top: 25px;
-  line-height: 1.8em;
+  line-height: 32px;
   animation-delay: 0.2s;
   -webkit-transition: width 0.5s, height 0.5s, margin 0.5s, font-size 0.5s; /* For Safari 3.1 to 6.0 */
   transition: width 0.5s, height 0.5s, margin 0.5s, font-size 0.5s;
