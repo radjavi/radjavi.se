@@ -23,7 +23,7 @@ class Header extends React.Component {
     var pos;
     if (this.props.active == 'home') pos = document.getElementById("homeLink").getBoundingClientRect();
     else if (this.props.active == 'projects') pos = document.getElementById("projectsLink").getBoundingClientRect();
-    document.getElementById("menu-line").style.width = `${pos.width-3}px`;
+    document.getElementById("menu-line").style.width = `${pos.width-1.9}px`;
     document.getElementById("menu-line").style.left = `${pos.left - headerPos.left}px`;
   }
 

@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import * as serviceWorker from './serviceWorker';
 import { Route, Link, BrowserRouter } from 'react-router-dom'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 const routing = (
   <BrowserRouter>
@@ -15,6 +16,7 @@ const routing = (
           <Header active={location.pathname == "/" ? "home" : "projects"} />
           <Route exact path="/" component={Home} />
           <Route exact path="/projects" component={Projects} />
+          <Footer />
         </div>
       )}
     />

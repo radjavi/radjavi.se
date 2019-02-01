@@ -7,10 +7,10 @@ import posed from 'react-pose';
 class Home extends Component {
   render() {
     const WelcomeDiv = posed.div({
-      hide: { opacity: 0, marginTop: "185px" },
+      hide: { opacity: 0, marginTop: "20px" },
       show: {
         opacity: 1,
-        marginTop: "170px",
+        marginTop: "0px",
         transition: {
           opacity: {duration: 500, ease: 'linear'},
           marginTop: {duration: 500, ease: 'easeOut'}
@@ -20,7 +20,6 @@ class Home extends Component {
 
     return (
       <div className="Home">
-
         <div className="smallBody">
           <WelcomeDiv id="welcome" initialPose="hide" pose="show">
             <div id="intro">
@@ -31,7 +30,7 @@ class Home extends Component {
                 <path d="M41 5.67647C42.4328 2.90212 46.3468 -0.981972 50.5403 5.67647C52.043 8.5618 56.1387 12.6013 60.5 5.67647" stroke="#454757" stroke-width="3"/>
                 <path d="M60.5 5.67647C61.9328 2.90212 65.8468 -0.981972 70.0403 5.67647C71.543 8.5618 75.6387 12.6013 80 5.67647" stroke="#454757" stroke-width="3"/>
               </svg>
-              <h4 id="CSE">Computer Science & Engineering</h4>
+              <h4 id="CSE">Computer Science & Engineering Student</h4>
             </div>
             <p id="studying">
               I'm currently studying my third year at Chalmers University of Technology in Gothenburg, Sweden.<br />
@@ -39,8 +38,6 @@ class Home extends Component {
             </p>
           </WelcomeDiv>
         </div>
-
-
       </div>
     );
   }
