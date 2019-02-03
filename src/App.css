@@ -25,6 +25,7 @@ h2 {
 }
 
 .smallBody {
+  position: relative;
   width: 80%;
   max-width: 1100px;
   margin: 0 auto;
@@ -166,17 +167,19 @@ li {
 }
 
 .project-div {
+  position: relative;
   background-color: #292930;
   width: 22%;
   height: 300px;
   border-radius: 10px;
   margin: 0 20px;
-  -webkit-transition: width 0.5s, height 0.5s, margin 0.5s; /* For Safari 3.1 to 6.0 */
-  transition: width 0.5s, height 0.5s, margin 0.5s;
+  -webkit-transition: width 0.5s, height 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s, height 0.5s;
 }
 
-.project-div:hover {
-  height: 350px;
+#project1 {
+  background-color: #FFC858;
+  display: flex;
 }
 
 .footer {

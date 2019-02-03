@@ -7,7 +7,7 @@ import posed from 'react-pose';
 class Home extends Component {
   render() {
     const WelcomeDiv = posed.div({
-      hide: { opacity: 0, marginTop: "20px" },
+      hide: { opacity: 0, marginTop: "30px" },
       show: {
         opacity: 1,
         marginTop: "0px",
