@@ -59,17 +59,12 @@ h2 {
   letter-spacing: 0.3px;
 }
 
-#intro {
+#about-title-div {
   position: relative;
   line-height: 50px;
-  -webkit-transition: width 0.5s, height 0.5s, margin 0.5s, font-size 0.5s; /* For Safari 3.1 to 6.0 */
-  transition: width 0.5s, height 0.5s, margin 0.5s, font-size 0.5s;
 }
 
-#welcome {
-}
-
-#hi {
+#about-title {
   color: #000;
   font-family: 'Noah';
   font-size: 30px;
@@ -78,7 +73,11 @@ h2 {
   line-height: 48px;
 }
 
-#studying {
+#about-subtitle {
+  font-weight: 600;
+}
+
+#about-desc {
   position: relative;
   max-width: 400px;
   color: #454757;
