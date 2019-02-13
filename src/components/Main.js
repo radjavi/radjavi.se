@@ -42,7 +42,16 @@ function Main() {
   const [project, setProject] = useState(0);
   const [hover, setHover] = useState(0);
   const logoProps = useSpring({ config: config.slow, from: {opacity: 0, top: 10}, to: {opacity: 1, top: 0}, delay: 600 });
-  const projProps = (i) => useSpring({ config: config.slow, from: {opacity: 0, top: 30}, to: {opacity: 1, top: 0, transform: project == i ? "scale(1.1)" : "scale(1)"}, delay: i * 150 + 600 });
+  const projProps = (i) => useSpring({
+    config: key => key == "top" || key == "opacity" ? config.slow : config.wobbly,
+    from: {opacity: 0, top: 30},
+    to: {
+      opacity: 1,
+      top: 0,
+      transform: project == i ? "scale(1.1)" : "scale(1)"
+    },
+    delay: key => key == "top" || key == "opacity" ? i * 150 + 600 : 0
+    });
 
   return (
     <div className="Home">

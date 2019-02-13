@@ -40,13 +40,12 @@ h2 {
   width: 80%;
   max-width: 1100px;
   margin: 0 auto;
-  padding-top: 40px;
   -webkit-transition: width 0.5s; /* For Safari 3.1 to 6.0 */
   transition: width 0.5s;
 }
 
 .Home {
-  min-height: 100vh;
+  min-height: 620px;
   display: flex;
   align-items: center;
 }
