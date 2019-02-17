@@ -5,6 +5,7 @@ import posed from 'react-pose';
 import Particles from 'react-particles-js';
 import particles_eatabeat from '../assets/particles-eatabeat.json'
 import img_eatabeat from '../assets/eatabeat-logo.svg'
+import 'boxicons';
 
 class Content extends Component {
   constructor(props) {
@@ -12,8 +13,7 @@ class Content extends Component {
   }
 
   render() {
-    var {title, subtitle, description, links} = this.props;
-    if (!links) links = [];
+    var {title, title2, subtitle, description, link, social, colors} = this.props;
 
     const FadeUpDiv = posed.div({
       hide: { opacity: 0, top: "30px" },
@@ -34,7 +34,7 @@ class Content extends Component {
       show: {
         opacity: 1,
         top: "0px",
-        delay: ({i}) => (i * 100 + 600),
+        delay: ({i}) => (i * 100 + 300),
         transition: {
           opacity: {duration: 300, ease: 'linear'},
           top: {duration: 500, ease: 'easeOut'}
@@ -46,22 +46,36 @@ class Content extends Component {
     return (
       <div>
         <FadeUpDiv initialPose="hide" pose="show" id="about-title-div">
-          <h3 id="about-title">
+          <h3 id="about-title" style={colors ? {color: colors.title} : {}}>
             {title}
           </h3>
         </FadeUpDiv>
-        <FadeUpDiv initialPose="hide" pose="show" delay="50" style={{position: "relative"}}>
-          <h4 id="about-subtitle">
+        {title2 && (
+          <FadeUpDiv initialPose="hide" pose="show" delay="100" id="about-title-div">
+            <h3 id="about-title" style={colors ? {color: colors.title} : {}}>
+              {title2}
+            </h3>
+          </FadeUpDiv>
+        )}
+        <FadeUpDiv initialPose="hide" pose="show" delay="100" style={{position: "relative"}}>
+          <h4 id="about-subtitle" style={colors ? {color: colors.subtitle} : {}}>
             {subtitle}
           </h4>
         </FadeUpDiv>
-        <FadeUpDiv initialPose="hide" pose="show" delay="600" style={{position: "relative"}}>
-          <p id="about-desc">
+        <FadeUpDiv initialPose="hide" pose="show" delay="200" style={{position: "relative"}}>
+          <p id="about-desc" style={colors ? {color: colors.desc} : {}}>
             {description}
           </p>
         </FadeUpDiv>
-        <div id="links">
-          {links.map(link => <PoseLink i={link.nr} initialPose="hide" pose="show" href={link.href} target="_blank" className="link">{link.text}</PoseLink>)}
+        {social && (
+          <div class="linksDiv">
+            <PoseLink i={1} initialPose="hide" pose="show" href="mailto:radjavi@hotmail.com" target="_blank" className="social"><box-icon name='paper-plane' color="#454757"></box-icon></PoseLink>
+            <PoseLink i={2} initialPose="hide" pose="show" href="https://www.linkedin.com/in/iman-radjavi/" target="_blank" className="social"><box-icon type='logo' name='linkedin' color="#454757"></box-icon></PoseLink>
+            <PoseLink i={3} initialPose="hide" pose="show" href="https://github.com/radjavi" target="_blank" className="social"><box-icon type='logo' name='github' color="#454757"></box-icon></PoseLink>
+          </div>
+        )}
+        <div class="linksDiv">
+          {link && <PoseLink i={1} initialPose="hide" pose="show" href={link.href} target="_blank" className="link" style={{color: colors.desc}}>Check it out</PoseLink>}
         </div>
         <span style={{display: "block", height: "200px"}}></span>
       </div>
