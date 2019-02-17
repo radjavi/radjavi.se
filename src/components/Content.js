@@ -75,7 +75,7 @@ class Content extends Component {
           </div>
         )}
         <div class="linksDiv">
-          {link && <PoseLink i={1} initialPose="hide" pose="show" href={link.href} target="_blank" className="link" style={{color: colors.desc}}>Check it out</PoseLink>}
+          {link && <PoseLink i={1} initialPose="hide" pose="show" href={link.href} target="_blank" className="link" style={colors ? {color: colors.desc} : {}}>Check it out</PoseLink>}
         </div>
         <span style={{display: "block", height: "200px"}}></span>
       </div>

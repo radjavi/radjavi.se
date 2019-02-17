@@ -64,6 +64,10 @@ h2 {
   transition: color 150ms ease-in-out;
 }
 
+#header-logo-dot {
+  transition: color 150ms ease-in-out;
+}
+
 #about-title-div {
   position: relative;
   line-height: 50px;
@@ -71,20 +75,20 @@ h2 {
 
 #about-title {
   color: #000;
-  font-family: 'Noah';
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 2.5px;
   line-height: 48px;
 }
 
 #about-subtitle {
-  font-weight: 600;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #about-desc {
+  font-family: 'Open Sans', sans-serif;
   position: relative;
-  max-width: 400px;
   color: #454757;
   font-size: 16px;
   font-weight: 400;
@@ -156,8 +160,12 @@ h2 {
   height: 250px;
   border-radius: 10px;
   margin: 30px 0;
-  -webkit-transition: width 0.5s, height 0.5s; /* For Safari 3.1 to 6.0 */
-  transition: width 0.5s, height 0.5s;
+  -webkit-transition: transform 250ms ease-in-out; /* For Safari 3.1 to 6.0 */
+  transition: transform 250ms ease-in-out;
+}
+
+.project-div:hover {
+  transform: scale(1.05);
 }
 
 .iconAnim {
@@ -168,4 +176,22 @@ h2 {
 #project1 {
   background-color: #FFC858;
   display: flex;
+}
+
+#project2 {
+  background-color: #55AFEF;
+  display: flex;
+}
+
+#project3 {
+  background-color: #F97794;
+  display: flex;
+}
+
+#project4 {
+  background-color: #FBAB7E;
+  display: flex;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
