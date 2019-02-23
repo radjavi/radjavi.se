@@ -1,5 +1,5 @@
-import React, { Component, useState, useReducer, useEffect } from 'react';
-import '../App.css';
+import React, { useReducer } from 'react';
+import '../style.css';
 import Content from './Content'
 import { Route, Redirect } from "react-router-dom";
 import posed from 'react-pose';

@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../style.css';
 import { Redirect } from "react-router-dom";
 import posed from 'react-pose';
 import Particles from 'react-particles-js';
-import particles_eatabeat from '../assets/particles-eatabeat.json'
-import img_eatabeat from '../assets/eatabeat-logo.svg'
 import 'boxicons';
 
 class Content extends Component {
@@ -45,25 +43,25 @@ class Content extends Component {
 
     return (
       <div>
-        <FadeUpDiv initialPose="hide" pose="show" id="about-title-div">
-          <h3 id="about-title" style={colors ? {color: colors.title} : {}}>
+        <FadeUpDiv initialPose="hide" pose="show" className="about-title-div">
+          <h3 className="about-title" style={colors ? {color: colors.title} : {}}>
             {title}
           </h3>
         </FadeUpDiv>
         {title2 && (
-          <FadeUpDiv initialPose="hide" pose="show" delay="100" id="about-title-div">
-            <h3 id="about-title" style={colors ? {color: colors.title} : {}}>
+          <FadeUpDiv initialPose="hide" pose="show" delay="100" className="about-title-div">
+            <h3 className="about-title" style={colors ? {color: colors.title} : {}}>
               {title2}
             </h3>
           </FadeUpDiv>
         )}
         <FadeUpDiv initialPose="hide" pose="show" delay="100" style={{position: "relative"}}>
-          <h4 id="about-subtitle" style={colors ? {color: colors.subtitle} : {}}>
+          <h4 className="about-subtitle" style={colors ? {color: colors.subtitle} : {}}>
             {subtitle}
           </h4>
         </FadeUpDiv>
         <FadeUpDiv initialPose="hide" pose="show" delay="200" style={{position: "relative"}}>
-          <p id="about-desc" style={colors ? {color: colors.desc} : {}}>
+          <p className="about-desc" style={colors ? {color: colors.desc} : {}}>
             {description}
           </p>
         </FadeUpDiv>

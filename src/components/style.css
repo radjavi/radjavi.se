@@ -85,15 +85,16 @@ h2 {
 }
 
 #header-logo-dot {
+  color: #F87B7B;
   transition: color 150ms ease-in-out;
 }
 
-#about-title-div {
+.about-title-div {
   position: relative;
   line-height: 50px;
 }
 
-#about-title {
+.about-title {
   font-family: 'Metropolis', sans-serif;
   color: #000;
   font-size: 30px;
@@ -101,12 +102,17 @@ h2 {
   line-height: 48px;
 }
 
-#about-subtitle {
+.about-title.mobile {
+  font-size: 28px;
+  line-height: 45px;
+}
+
+.about-subtitle {
   font-weight: 500;
   font-size: 17px;
 }
 
-#about-desc {
+.about-desc {
   position: relative;
   color: #454757;
   font-size: 17px;
@@ -117,6 +123,11 @@ h2 {
   animation-delay: 0.2s;
   -webkit-transition: width 0.5s, height 0.5s, margin 0.5s, font-size 0.5s; /* For Safari 3.1 to 6.0 */
   transition: width 0.5s, height 0.5s, margin 0.5s, font-size 0.5s;
+}
+
+.about-desc.mobile {
+  font-size: 16px;
+  margin-top: 45px;
 }
 
 .linksDiv {
@@ -214,4 +225,9 @@ h2 {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+}
+
+/*** MOBILE ***/
+.Home-mobile {
+  padding-top: 30px;
 }
