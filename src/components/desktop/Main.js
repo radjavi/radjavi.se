@@ -17,7 +17,7 @@ function Main() {
       title2="I'm Iman Radjavi"
       description={[
         "Currently studying ",
-        <span style={{color: "#E16565"}}>Computer Science & Engineering</span>,
+        <span style={{color: "#E16565", fontWeight: 600}}>Computer Science & Engineering</span>,
         " at Chalmers University of Technology in Gothenburg, Sweden. On my spare time I work with fun projects to learn new technologies."
       ]}
       social

@@ -94,6 +94,14 @@ h2 {
   line-height: 50px;
 }
 
+.welcome-mobile {
+  font-family: 'Metropolis', sans-serif;
+  color: #000;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 45px;
+}
+
 .about-title {
   font-family: 'Metropolis', sans-serif;
   color: #000;
@@ -103,8 +111,8 @@ h2 {
 }
 
 .about-title.mobile {
-  font-size: 28px;
-  line-height: 45px;
+  font-size: 24px;
+  line-height: 40px;
 }
 
 .about-subtitle {
@@ -131,7 +139,7 @@ h2 {
 }
 
 .linksDiv {
-  margin-top: 80px;
+  height: 50px;
 }
 
 .social {
@@ -158,6 +166,12 @@ h2 {
 .link:hover {
   border-color: #E16565;
   color: #000;
+}
+
+.link.mobile {
+  color: #E16565;
+  border: 0;
+  font-weight: 600;
 }
 
 .home-grid {
@@ -197,6 +211,16 @@ h2 {
 
 .project-div:hover {
   transform: scale(1.05);
+}
+
+.project-div.mobile {
+  width: 100vw;
+  cursor: auto;
+  border-radius: 0;
+}
+
+.project-div.mobile:hover {
+  transform: scale(1);
 }
 
 .iconAnim {

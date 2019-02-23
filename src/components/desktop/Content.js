@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../style.css';
 import { Redirect } from "react-router-dom";
 import posed from 'react-pose';
-import Particles from 'react-particles-js';
 import 'boxicons';
 
 class Content extends Component {
@@ -65,6 +64,7 @@ class Content extends Component {
             {description}
           </p>
         </FadeUpDiv>
+        <span style={{display: "block", height: "80px"}}></span>
         {social && (
           <div class="linksDiv">
             <PoseLink i={1} initialPose="hide" pose="show" href="mailto:radjavi@hotmail.com" target="_blank" className="social"><box-icon name='paper-plane' color="#454757"></box-icon></PoseLink>
@@ -72,10 +72,11 @@ class Content extends Component {
             <PoseLink i={3} initialPose="hide" pose="show" href="https://github.com/radjavi" target="_blank" className="social"><box-icon type='logo' name='github' color="#454757"></box-icon></PoseLink>
           </div>
         )}
-        <div class="linksDiv">
-          {link && <PoseLink i={1} initialPose="hide" pose="show" href={link.href} target="_blank" className="link" style={colors ? {color: colors.desc} : {}}>Check it out</PoseLink>}
-        </div>
-        <span style={{display: "block", height: "200px"}}></span>
+        {link && (
+          <div class="linksDiv">
+            <PoseLink i={1} initialPose="hide" pose="show" href={link.href} target="_blank" className="link" style={colors ? {color: colors.desc} : {}}>Check it out</PoseLink>
+          </div>
+        )}
       </div>
     );
   }
