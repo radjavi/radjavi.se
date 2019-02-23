@@ -92,7 +92,7 @@ function Main() {
 
   const [state, setState] = useReducer(stateReducer, initState);
 
-  const logoProps = useSpring({ config: config.slow, from: {opacity: 0, top: 10}, to: {opacity: 1, top: 0}, delay: 200 });
+  const logoProps = useSpring({ config: config.slow, from: {opacity: 0, top: 10}, to: {opacity: 1, top: 0}, delay: 300 });
   const [projSprings, setProjSpring, stopProjSpring] = useSprings(4, index => projConfig(index));
 
   return (
