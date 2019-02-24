@@ -162,7 +162,6 @@ function Main() {
                     className="project-div"
                     onClick={() => setState(i+1)}
                   >
-                    {console.log(props)}
                     <img src={cetac} style={{height: "65px", margin: "auto"}} />
                   </anim.div>
                 );

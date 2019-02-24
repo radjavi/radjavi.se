@@ -5,7 +5,8 @@ import posed from 'react-pose';
 import Particles from 'react-particles-js';
 import particles_eatabeat from '../assets/particles-eatabeat.json'
 import img_eatabeat from '../assets/eatabeat-logo.svg'
-import { Zoom, Fade } from 'react-reveal';
+import cetac from '../assets/cetac.svg'
+import { Zoom, Fade, Flip } from 'react-reveal';
 
 function Main() {
   const logoProps = useSpring({ config: config.slow, from: {opacity: 0, top: 10}, to: {opacity: 1, top: 0}, delay: 300 });
@@ -79,15 +80,16 @@ function Main() {
 
       <span style={{display: "block", height: "50px"}}></span>
 
+      {/* Project 1 */}
       <div>
-        <Zoom>
+        <Fade bottom distance="40px">
           <div id="project1" className="project-div mobile">
             <Particles params={particles_eatabeat} style={{height: "100%", width: "100%", position: "absolute", borderRadius: "10px"}} />
             <img src={img_eatabeat} style={{height: "75px", margin: "auto"}} />
           </div>
-        </Zoom>
-        <div className="smallBody">
-          <Fade cascade bottom>
+        </Fade>
+        <div className="smallBody" style={{paddingTop: "15px"}}>
+          <Fade cascade bottom distance="40px" delay={50}>
             <div>
               <h3 className="about-title mobile">
                 Eat A Beat
@@ -102,12 +104,114 @@ function Main() {
               <a href="" target="_blank" className="link mobile">
                 Check it out
               </a>
+              <span style={{display: "block", height: "50px"}}></span>
+            </div>
+          </Fade>
+        </div>
+      </div>
+
+      {/* Project 2 */}
+      <div>
+        <Fade bottom distance="40px">
+          <div id="project2" className="project-div mobile">
+            <box-icon type='solid' name='car' color="white" size="65px" style={{margin: "auto"}}></box-icon>
+          </div>
+        </Fade>
+        <div className="smallBody" style={{paddingTop: "15px"}}>
+          <Fade cascade bottom distance="40px" delay={50}>
+            <div>
+              <h3 className="about-title mobile">
+                Freefinder
+              </h3>
+              <h3 className="about-subtitle">
+                Personal project
+              </h3>
+              <p className="about-desc mobile" style={{marginTop: "30px"}}>
+                Developed a serverless backend using AWS Lambda, Cognito & DynamoDB that notifies users when a vehicle of interest is found on a specific website.
+              </p>
+              <span style={{display: "block", height: "50px"}}></span>
+              <a href="" target="_blank" className="link mobile">
+                Check it out
+              </a>
+              <span style={{display: "block", height: "50px"}}></span>
+            </div>
+          </Fade>
+        </div>
+      </div>
+
+      {/* Project 3 */}
+      <div>
+        <Fade bottom distance="40px">
+          <div id="project3" className="project-div mobile">
+            <box-icon name='mobile' color="white" size="65px" style={{margin: "auto"}}></box-icon>
+          </div>
+        </Fade>
+        <div className="smallBody" style={{paddingTop: "15px"}}>
+          <Fade cascade bottom distance="40px" delay={50}>
+            <div>
+              <h3 className="about-title mobile">
+                Smart Home
+              </h3>
+              <h3 className="about-subtitle">
+                Personal project
+              </h3>
+              <p className="about-desc mobile" style={{marginTop: "30px"}}>
+                Using Google Firebase, I have connected my Raspberry Pi 3 to a database. This way, I can connect my Android app to Firebase and use it to control my home.
+              </p>
+              <span style={{display: "block", height: "50px"}}></span>
+              <a href="" target="_blank" className="link mobile">
+                Check it out
+              </a>
+              <span style={{display: "block", height: "50px"}}></span>
+            </div>
+          </Fade>
+        </div>
+      </div>
+
+      {/* Project 4 */}
+      <div>
+        <Fade bottom distance="40px">
+          <div id="project4" className="project-div mobile">
+            <img src={cetac} style={{height: "65px", margin: "auto"}} />
+          </div>
+        </Fade>
+        <div className="smallBody" style={{paddingTop: "15px"}}>
+          <Fade cascade bottom distance="40px" delay={50}>
+            <div>
+              <h3 className="about-title mobile">
+                CETAC
+              </h3>
+              <h3 className="about-subtitle">
+                WordPress website
+              </h3>
+              <p className="about-desc mobile" style={{marginTop: "30px"}}>
+                Created a brand new website for the student organization CETAC using Wordpress.
+              </p>
+              <span style={{display: "block", height: "50px"}}></span>
+              <a href="" target="_blank" className="link mobile">
+                Check it out
+              </a>
+              <span style={{display: "block", height: "50px"}}></span>
             </div>
           </Fade>
         </div>
       </div>
 
       <span style={{display: "block", height: "50px"}}></span>
+
+
+        <footer>
+          <div className="smallBody">
+            <Fade right cascade distance="40px">
+              <div style={{display: "flex", flexDirection: "column"}}>
+                <h1 id="header-logo">r<span id="header-logo-dot">.</span></h1>
+                <span style={{display: "block", height: "15px"}}></span>
+                <p>© {new Date().getFullYear()} Iman Radjavi</p>
+              </div>
+            </Fade>
+          </div>
+        </footer>
+
     </div>
   );
 }
