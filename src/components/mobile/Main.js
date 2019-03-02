@@ -82,14 +82,14 @@ function Main() {
 
       {/* Project 1 */}
       <div>
-        <Fade bottom distance="40px">
+        <Fade bottom distance="40px" duration={800}>
           <div id="project1" className="project-div mobile">
             <Particles params={particles_eatabeat} style={{height: "100%", width: "100%", position: "absolute", borderRadius: "10px"}} />
             <img src={img_eatabeat} style={{height: "75px", margin: "auto"}} />
           </div>
         </Fade>
         <div className="smallBody" style={{paddingTop: "15px"}}>
-          <Fade cascade bottom distance="40px" delay={50}>
+          <Fade cascade bottom distance="40px" delay={50} duration={800}>
             <div>
               <h3 className="about-title mobile">
                 Eat A Beat
@@ -101,7 +101,7 @@ function Main() {
                 A 2D game generated from any track, powered by the Spotify API/SDK. This project won 1st place on Spotify DevX Hackathon 2018.
               </p>
               <span style={{display: "block", height: "50px"}}></span>
-              <a href="" target="_blank" className="link mobile">
+              <a href="https://github.com/SimonTakman/EatABeat" target="_blank" className="link mobile">
                 Check it out
               </a>
               <span style={{display: "block", height: "50px"}}></span>
@@ -112,13 +112,13 @@ function Main() {
 
       {/* Project 2 */}
       <div>
-        <Fade bottom distance="40px">
+        <Fade bottom distance="40px" duration={800}>
           <div id="project2" className="project-div mobile">
             <box-icon type='solid' name='car' color="white" size="65px" style={{margin: "auto"}}></box-icon>
           </div>
         </Fade>
         <div className="smallBody" style={{paddingTop: "15px"}}>
-          <Fade cascade bottom distance="40px" delay={50}>
+          <Fade cascade bottom distance="40px" delay={50} duration={800}>
             <div>
               <h3 className="about-title mobile">
                 Freefinder
@@ -130,10 +130,6 @@ function Main() {
                 Developed a serverless backend using AWS Lambda, Cognito & DynamoDB that notifies users when a vehicle of interest is found on a specific website.
               </p>
               <span style={{display: "block", height: "50px"}}></span>
-              <a href="" target="_blank" className="link mobile">
-                Check it out
-              </a>
-              <span style={{display: "block", height: "50px"}}></span>
             </div>
           </Fade>
         </div>
@@ -141,13 +137,13 @@ function Main() {
 
       {/* Project 3 */}
       <div>
-        <Fade bottom distance="40px">
+        <Fade bottom distance="40px" duration={800}>
           <div id="project3" className="project-div mobile">
             <box-icon name='mobile' color="white" size="65px" style={{margin: "auto"}}></box-icon>
           </div>
         </Fade>
         <div className="smallBody" style={{paddingTop: "15px"}}>
-          <Fade cascade bottom distance="40px" delay={50}>
+          <Fade cascade bottom distance="40px" delay={50} duration={800}>
             <div>
               <h3 className="about-title mobile">
                 Smart Home
@@ -159,7 +155,7 @@ function Main() {
                 Using Google Firebase, I have connected my Raspberry Pi 3 to a database. This way, I can connect my Android app to Firebase and use it to control my home.
               </p>
               <span style={{display: "block", height: "50px"}}></span>
-              <a href="" target="_blank" className="link mobile">
+              <a href="https://github.com/radjavi/smarthome" target="_blank" className="link mobile">
                 Check it out
               </a>
               <span style={{display: "block", height: "50px"}}></span>
@@ -170,13 +166,13 @@ function Main() {
 
       {/* Project 4 */}
       <div>
-        <Fade bottom distance="40px">
+        <Fade bottom distance="40px" duration={800}>
           <div id="project4" className="project-div mobile">
             <img src={cetac} style={{height: "65px", margin: "auto"}} />
           </div>
         </Fade>
         <div className="smallBody" style={{paddingTop: "15px"}}>
-          <Fade cascade bottom distance="40px" delay={50}>
+          <Fade cascade bottom distance="40px" delay={50} duration={800}>
             <div>
               <h3 className="about-title mobile">
                 CETAC
@@ -188,7 +184,7 @@ function Main() {
                 Created a brand new website for the student organization CETAC using Wordpress.
               </p>
               <span style={{display: "block", height: "50px"}}></span>
-              <a href="" target="_blank" className="link mobile">
+              <a href="https://cetac.se" target="_blank" className="link mobile">
                 Check it out
               </a>
               <span style={{display: "block", height: "50px"}}></span>
@@ -197,16 +193,16 @@ function Main() {
         </div>
       </div>
 
-      <span style={{display: "block", height: "50px"}}></span>
+      <span style={{display: "block", height: "30px"}}></span>
 
 
         <footer>
           <div className="smallBody">
-            <Fade right cascade distance="40px">
-              <div style={{display: "flex", flexDirection: "column"}}>
+            <Fade right cascade distance="20px" delay={500} duration={800}>
+              <div className="footer-div">
                 <h1 id="header-logo">r<span id="header-logo-dot">.</span></h1>
-                <span style={{display: "block", height: "15px"}}></span>
-                <p>© {new Date().getFullYear()} Iman Radjavi</p>
+                <span style={{display: "block", height: "8px"}}></span>
+                <p style={{color: "#9899a5", paddingTop: "6px"}}>© {new Date().getFullYear()} Iman Radjavi</p>
               </div>
             </Fade>
           </div>

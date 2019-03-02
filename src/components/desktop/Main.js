@@ -28,8 +28,8 @@ function Main() {
       title="Eat A Beat"
       subtitle="Spotify devX 2018 - Hackathon, Gothenburg"
       description="A 2D game generated from any track, powered by the Spotify API/SDK. This project won 1st place on Spotify DevX Hackathon 2018."
-      link={{href: ""}}
-      colors={{title: "#FFC858", subtitle: "#FFC858", desc: "#fff"}}
+      link={{href: "https://github.com/SimonTakman/EatABeat"}}
+      colors={{title: "#FFC858", subtitle: "#FFC858", desc: "#fff", link: "#FFC858"}}
     />
   )
   const freefinderPage = (
@@ -37,8 +37,7 @@ function Main() {
       title="Freefinder"
       subtitle="Personal project"
       description="Developed a serverless backend using AWS Lambda, Cognito & DynamoDB that notifies users when a vehicle of interest is found on a specific website."
-      link={{href: ""}}
-      colors={{title: "#fff", subtitle: "#fff", desc: "#9aaabf"}}
+      colors={{title: "#fff", subtitle: "#75a6dd", desc: "#fff", link: "#fff"}}
     />
   )
   const smarthomePage = (
@@ -46,8 +45,8 @@ function Main() {
       title="Smart Home"
       subtitle="Personal project"
       description="Using Google Firebase, I have connected my Raspberry Pi 3 to a database. This way, I can connect my Android app to Firebase and use it to control my home."
-      link={{href: ""}}
-      colors={{title: "#fff", subtitle: "#fff", desc: "#f6abbc"}}
+      link={{href: "https://github.com/radjavi/smarthome"}}
+      colors={{title: "#fff", subtitle: "#F97794", desc: "#fff", link: "#F97794"}}
     />
   )
   const cetacPage = (
@@ -55,7 +54,8 @@ function Main() {
       title="CETAC"
       subtitle="WordPress website"
       description="Created a brand new website for the student organization CETAC using Wordpress."
-      link={{href: ""}}
+      link={{href: "https://cetac.se"}}
+      colors={{title: "#fff", subtitle: "#5fcc9c", desc: "#fff", link: "#5fcc9c"}}
     />
   )
 
@@ -80,11 +80,11 @@ function Main() {
       case 1:
         return state.project != action ? {project: action, colors: {bg: "#29977F", prim: "#fff", acc: "#FFC858"}} : initState;
       case 2:
-        return state.project != action ? {project: action, colors: {bg: "#233142", prim: "#fff", acc: "#55AFEF"}} : initState;
+        return state.project != action ? {project: action, colors: {bg: "#1f3250", prim: "#fff", acc: "#519DF2"}} : initState;
       case 3:
-        return state.project != action ? {project: action, colors: {bg: "#993249", prim: "#fff", acc: "#F97794"}} : initState;
+        return state.project != action ? {project: action, colors: {bg: "#5c3b6f", prim: "#fff", acc: "#F97794"}} : initState;
       case 4:
-        return state.project != action ? {project: action, colors: {bg: "#fff", prim: "#000", acc: "#FBAB7E"}} : initState;
+        return state.project != action ? {project: action, colors: {bg: "#215b63", prim: "#fff", acc: "#5fcc9c"}} : initState;
       default:
         return initState;
     }

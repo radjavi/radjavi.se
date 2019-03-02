@@ -74,7 +74,7 @@ class Content extends Component {
         )}
         {link && (
           <div class="linksDiv">
-            <PoseLink i={1} initialPose="hide" pose="show" href={link.href} target="_blank" className="link" style={colors ? {color: colors.desc} : {}}>Check it out</PoseLink>
+            <PoseLink i={1} initialPose="hide" pose="show" href={link.href} target="_blank" className="link" style={colors ? {color: colors.link} : {}}>Check it out</PoseLink>
           </div>
         )}
       </div>
