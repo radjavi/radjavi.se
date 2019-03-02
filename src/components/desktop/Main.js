@@ -8,6 +8,7 @@ import particles_eatabeat from '../assets/particles-eatabeat.json'
 import img_eatabeat from '../assets/eatabeat-logo.svg'
 import cetac from '../assets/cetac.svg'
 import { useSpring, useSprings, animated as anim, config } from 'react-spring'
+import { Fade } from 'react-reveal';
 
 function Main() {
 

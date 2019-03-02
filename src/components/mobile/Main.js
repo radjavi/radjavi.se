@@ -48,7 +48,7 @@ function Main() {
           </anim.div>
         </header>
 
-        <span style={{display: "block", height: "22vh"}}></span>
+        <span style={{display: "block", height: "150px"}}></span>
 
         <FadeUpDiv initialPose="hide" pose="show" className="about-title-div">
           <h3 className="welcome-mobile">
@@ -78,7 +78,7 @@ function Main() {
         </div>
       </div>
 
-      <span style={{display: "block", height: "50px"}}></span>
+      <span style={{display: "block", height: "20px"}}></span>
 
       {/* Project 1 */}
       <div>
@@ -196,17 +196,17 @@ function Main() {
       <span style={{display: "block", height: "30px"}}></span>
 
 
-        <footer>
-          <div className="smallBody">
-            <Fade right cascade distance="20px" delay={500} duration={800}>
-              <div className="footer-div">
-                <h1 id="header-logo">r<span id="header-logo-dot">.</span></h1>
-                <span style={{display: "block", height: "8px"}}></span>
-                <p style={{color: "#9899a5", paddingTop: "6px"}}>© {new Date().getFullYear()} Iman Radjavi</p>
-              </div>
-            </Fade>
-          </div>
-        </footer>
+      <footer>
+        <div className="smallBody">
+          <Fade right cascade distance="20px" delay={500} duration={800}>
+            <div className="footer-div">
+              <h1 id="header-logo">r<span id="header-logo-dot">.</span></h1>
+              <span style={{display: "block", height: "8px"}}></span>
+              <p style={{color: "#9899a5", paddingTop: "6px"}}>© {new Date().getFullYear()} Iman Radjavi</p>
+            </div>
+          </Fade>
+        </div>
+      </footer>
 
     </div>
   );
