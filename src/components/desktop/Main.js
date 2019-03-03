@@ -1,7 +1,6 @@
 import React, { useReducer } from 'react';
 import '../style.css';
 import Content from './Content'
-import { Route, Redirect } from "react-router-dom";
 import posed from 'react-pose';
 import Particles from 'react-particles-js';
 import particles_eatabeat from '../assets/particles-eatabeat.json'
