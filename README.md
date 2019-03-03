@@ -8,6 +8,7 @@ The source code for my personal website.
 * [react-reveal](https://www.react-reveal.com/)
 * [react-particles-js](https://github.com/Wufe/react-particles-js)
 * [Boxicons](https://boxicons.com/)
+* [react-responsive](https://github.com/contra/react-responsive)
 
 ### Fonts
 * [Metropolis](https://github.com/chrismsimpson/Metropolis)
