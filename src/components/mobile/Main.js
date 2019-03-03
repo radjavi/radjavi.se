@@ -65,7 +65,7 @@ function Main() {
         <FadeUpDiv initialPose="hide" pose="show" delay="200" style={{position: "relative"}}>
           <p className="about-desc mobile">
             Currently studying <span style={{color: "#E16565", fontWeight: 600}}>Computer Science & Engineering</span> at Chalmers University of Technology in Gothenburg, Sweden.
-            On my spare time I work with fun projects to learn new technologies.
+            On my spare time I work on fun projects to learn new technologies.
           </p>
         </FadeUpDiv>
 
@@ -98,7 +98,7 @@ function Main() {
                 Spotify devX - 2018
               </h3>
               <p className="about-desc mobile" style={{marginTop: "30px"}}>
-                A 2D game generated from any track, powered by the Spotify API/SDK. This project won 1st place on Spotify DevX Hackathon 2018.
+                During 24 hours, a 2D game generated from any track was built using JavaScript and the Spotify API/SDK. The project won 1st place.
               </p>
               <span style={{display: "block", height: "50px"}}></span>
               <a href="https://github.com/SimonTakman/EatABeat" target="_blank" className="link mobile">
@@ -128,6 +128,7 @@ function Main() {
               </h3>
               <p className="about-desc mobile" style={{marginTop: "30px"}}>
                 Developed a serverless backend using AWS Lambda, Cognito & DynamoDB that notifies users when a vehicle of interest is found on a specific website.
+                Users can sign up and enter routes they want to be notified about, and the lambda function will look for these periodically.
               </p>
               <span style={{display: "block", height: "50px"}}></span>
             </div>
@@ -152,7 +153,8 @@ function Main() {
                 Personal project
               </h3>
               <p className="about-desc mobile" style={{marginTop: "30px"}}>
-                Using Google Firebase, I have connected my Raspberry Pi 3 to a database. This way, I can connect my Android app to Firebase and use it to control my home.
+                Using Google Firebase and a Raspberry Pi 3, I have connected my home to the cloud.
+                With a custom-made Android application, I am able to control my home from anywhere.
               </p>
               <span style={{display: "block", height: "50px"}}></span>
               <a href="https://github.com/radjavi/smarthome" target="_blank" className="link mobile">

@@ -19,7 +19,7 @@ function Main() {
       description={[
         "Currently studying ",
         <span style={{color: "#E16565", fontWeight: 600}}>Computer Science & Engineering</span>,
-        " at Chalmers University of Technology in Gothenburg, Sweden. On my spare time I work with fun projects to learn new technologies."
+        " at Chalmers University of Technology in Gothenburg, Sweden. On my spare time I work on fun projects to learn new technologies."
       ]}
       social
     />
@@ -28,7 +28,7 @@ function Main() {
     <Content
       title="Eat A Beat"
       subtitle="Spotify devX 2018 - Hackathon, Gothenburg"
-      description="A 2D game generated from any track, powered by the Spotify API/SDK. This project won 1st place on Spotify DevX Hackathon 2018."
+      description="During 24 hours, a 2D game generated from any track was built using JavaScript and the Spotify API/SDK. The project won 1st place."
       link={{href: "https://github.com/SimonTakman/EatABeat"}}
       colors={{title: "#FFC858", subtitle: "#FFC858", desc: "#fff", link: "#FFC858"}}
     />
@@ -37,7 +37,7 @@ function Main() {
     <Content
       title="Freefinder"
       subtitle="Personal project"
-      description="Developed a serverless backend using AWS Lambda, Cognito & DynamoDB that notifies users when a vehicle of interest is found on a specific website."
+      description="Developed a serverless backend using AWS Lambda, Cognito & DynamoDB that notifies users when a vehicle of interest is found on a specific website. Users can sign up and enter routes they want to be notified about, and the lambda function will look for these periodically."
       colors={{title: "#fff", subtitle: "#75a6dd", desc: "#fff", link: "#fff"}}
     />
   )
@@ -45,7 +45,7 @@ function Main() {
     <Content
       title="Smart Home"
       subtitle="Personal project"
-      description="Using Google Firebase, I have connected my Raspberry Pi 3 to a database. This way, I can connect my Android app to Firebase and use it to control my home."
+      description="Using Google Firebase and a Raspberry Pi 3, I have connected my home to the cloud. With a custom-made Android application, I am able to control my home from anywhere."
       link={{href: "https://github.com/radjavi/smarthome"}}
       colors={{title: "#fff", subtitle: "#F97794", desc: "#fff", link: "#F97794"}}
     />
@@ -53,7 +53,7 @@ function Main() {
   const cetacPage = (
     <Content
       title="CETAC"
-      subtitle="WordPress website"
+      subtitle="WordPress"
       description="Created a brand new website for the student organization CETAC using Wordpress."
       link={{href: "https://cetac.se"}}
       colors={{title: "#fff", subtitle: "#5fcc9c", desc: "#fff", link: "#5fcc9c"}}

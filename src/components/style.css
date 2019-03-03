@@ -49,6 +49,8 @@ a {
   display: flex;
 }
 
+img{ pointer-events: none; }
+
 .smallBody {
   position: relative;
   width: 80%;
