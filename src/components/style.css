@@ -239,17 +239,17 @@ img{ pointer-events: none; }
 }
 
 #project2 {
-  background-color: #519DF2;
-  display: flex;
-}
-
-#project3 {
   background-color: #F97794;
   display: flex;
 }
 
-#project4 {
+#project3 {
   background-color: #5fcc9c;
+  display: flex;
+}
+
+#project4 {
+  background-color: #519DF2;
   display: flex;
   -moz-user-select: none;
   -webkit-user-select: none;
