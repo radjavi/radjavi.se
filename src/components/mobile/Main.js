@@ -63,7 +63,7 @@ function Main () {
 
         <FadeUpDiv initialPose='hide' pose='show' delay='200' style={{ position: 'relative' }}>
           <p className='about-desc mobile'>
-            First year M.Sc. student in <span style={{ color: '#E16565', fontWeight: 600 }}>Computer Science</span> at Chalmers University of Technology in Gothenburg, Sweden.
+            Final year M.Sc. student in <span style={{ color: '#E16565', fontWeight: 600 }}>Computer Science</span> at Chalmers University of Technology in Gothenburg, Sweden.
             On my spare time I work on fun projects to learn new technologies.
           </p>
         </FadeUpDiv>

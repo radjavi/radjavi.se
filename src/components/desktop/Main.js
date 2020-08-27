@@ -12,7 +12,7 @@ function Main () {
       title='Hey! 👋'
       title2="I'm Iman Radjavi"
       description={[
-        'First year M.Sc. student in ',
+        'Final year M.Sc. student in ',
         <span style={{ color: '#E16565', fontWeight: 600 }}>Computer Science</span>,
         ' at Chalmers University of Technology in Gothenburg, Sweden. On my spare time I work on fun projects to learn new technologies.'
       ]}
